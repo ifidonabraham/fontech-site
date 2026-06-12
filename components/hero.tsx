@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowDown, Sparkles } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 
 const floatingOrbs = [
@@ -82,20 +82,6 @@ export function Hero() {
         style={{ opacity }}
         className="relative z-10 text-center px-6 max-w-6xl mx-auto"
       >
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-[rgba(212,175,55,0.3)] bg-[rgba(212,175,55,0.05)] mb-8"
-        >
-          <Sparkles size={14} className="text-[#D4AF37]" />
-          <span className="text-xs tracking-[0.4em] text-[#D4AF37] uppercase font-medium">
-            Innovative Digital Solutions
-          </span>
-          <Sparkles size={14} className="text-[#D4AF37]" />
-        </motion.div>
-
         {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
